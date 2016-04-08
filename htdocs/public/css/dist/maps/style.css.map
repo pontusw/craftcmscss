@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","sources":["style.scss"],"sourcesContent":["body{\n\t#header{\n\t\tbackground: #aaa;\n\t}\n}"],"mappings":"AAAA,IAAI,CACH,OAAO,CAAA;EACN,UAAU,EAAE,IAAK,GACjB","names":[],"sourceRoot":"/source/"}
