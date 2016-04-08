@@ -15,7 +15,6 @@ Thumbs.db
 .project
 .settings
 .tmproj
-node_modules/
 *.esproj
 nbproject
 *.sublime-workspace
@@ -25,3 +24,5 @@ nbproject
 _notes
 dwsync.xml
 logs/*
+node_modules/
+dist/

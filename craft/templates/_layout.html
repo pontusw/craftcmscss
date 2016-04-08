@@ -15,16 +15,13 @@
 	<meta charset="utf-8" />
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
-
-	<link rel="stylesheet" type="text/css" href="public/css/dist/style.css">
-		
+	<link rel="stylesheet" type="text/css" href="public/css/dist/style.css">		
 </head>
 
 <body>
 	<div id="container">
 		<header id="header">
 			<h1><a href="{{ siteUrl }}">{{ siteName }}</a></h1>
-
 			<nav>
 				<ul>
 					<li><a href="{{ url('news') }}" {% if craft.request.firstSegment == 'news' %}class="active"{% endif %}>News</a></li>
