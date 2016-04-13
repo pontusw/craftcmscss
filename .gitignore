@@ -15,6 +15,7 @@ Thumbs.db
 .project
 .settings
 db.php
+craft/config/db.php
 .tmproj
 *.esproj
 nbproject
