@@ -12,7 +12,7 @@ if($_SERVER['SERVER_NAME'] == "craft.apeln"){
 
 	$server = 'localhost';
 	$user = 'root';
-	$pass = '';
+	$pass = 'ckr30aik';
 	$db = 'craft2';
 	$prefix =  'craft2';
 
@@ -22,7 +22,7 @@ else{
 
 	$server = 'localhost';
 	$user = 'root';
-	$pass = '';
+	$pass = 'ckr30aik';
 	$db = 'craft2';
 	$prefix =  'craft2';
 
