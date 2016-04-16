@@ -20,14 +20,26 @@
 {% extends "_layout" %}
 
 {% block content %}
-	<h1>{{ entry.title }}</h1>
+<div class="homepage-background">
+	<div class="page">
+		<div class="content">
+			<h1>En smak av framtiden</h1>
+			<img class="icon" src="/public/image/apple.png"> </img>
 
-	{{ entry.body }}
+			<p>På platsen för en grönskande medeltidsby i skuggan av Brunkebergsåsen anlägger vi nu ett antal arbetsplatser med smak av framtiden.</p>
+			<p>Kvarteret Apeln erbjuder öppna, flexibla kontorsytor i storleksordningen 1000–5000 m2. Perfekta för varje företag som tror på ett aktivitetsbaserat arbetssätt. Och givetvis lika välkomnande om ni ser traditionellt fasta platser som den naturliga lösningen.
+			Entrén välkomnar med service och mötesplatser. Här finns kaffe, enklare maträtter och även ett gym som alla i huset får nyttja.</p>
+			<p>Men det är förstås varje våningsplan som gör Kvarteret Apeln spännande.  Läs mer om fria platser, personlig förvaring och andra smarta lösningar på sidan XX. Och tveka inte att höra av er till oss på Klara Norra Fastigheter om det finns något mer vi kan göra för att optimera er framtida arbetsplats.</p>
+			<p>Läget slutligen? Tja, ett av stans bästa, skulle vi säga. Mitt i smeten nära till både Hötorget, Centralen, Arlanda Express och Världen. Allt i en oas som säkrar lugn och arbetsro med löprundor och mysiga flanörstråk runt hörnet.  Redo för en ny era i företagets historia? Rentav en smak av framtiden? Välkommen till Kvarteret Apeln!
+			</p>
 
-	<h2>Recent News</h2>
-	<ul>
-		{% for entry in craft.entries.section('news').limit(5).find() %}
-			<li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
-		{% endfor %}
-	</ul>
+			<p class="name">Peter Jansson,</br>
+			VD  Klara Norra Fastigheter</p>
+		</div>
+	</div>
+	<div class="logo-footer">
+		<img class="logo" src="/public/image/logo.png"> </img>
+	</div>
+</div>
+
 {% endblock %}

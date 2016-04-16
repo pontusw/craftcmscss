@@ -15,16 +15,24 @@
 	<meta charset="utf-8" />
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
-	<link rel="stylesheet" type="text/css" href="public/css/dist/style.css">		
+	<link rel="stylesheet" type="text/css" href="public/css/dist/style.css">
+	<script src="https://use.typekit.net/cfb8jcd.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>		
 </head>
 
 <body>
 	<div id="container">
 		<header id="header">
-			<h1><a href="{{ siteUrl }}">{{ siteName }}</a></h1>
 			<nav>
 				<ul>
-					<li><a href="{{ url('news') }}" {% if craft.request.firstSegment == 'news' %}class="active"{% endif %}>News</a></li>
+					<li><a href="#">Kvarteret Apeln</a></li>
+					<li><a href="#">Entre</a></li>
+					<li><a href="#">Kontorslokaler</a></li>
+					<li><a href="#">Området</a></li>
+					<li><a href="#">Arbetsdagen</a></li>
+					<li><a href="#">Miljö</a></li>
+					<li><a href="#">Fakta</a></li>
+					<li><a href="#">Kontakt</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -37,7 +45,8 @@
 		</main>
 
 		<footer id="footer">
-			Copyright {{ now.year }} {{ craft.request.serverName | ucfirst }}. All rights reserved  •  Built with <a href="http://craftcms.com">Craft</a>
+			
+
 		</footer>
 	</div>
 </body>
