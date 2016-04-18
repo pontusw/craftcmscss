@@ -1,0 +1,59 @@
+body {
+
+	#container {
+			opacity: 1;
+			transform: translateY(0%);
+			-webkit-transition: transform 2.6s ease-in-out, opacity 1s ease-in-out 0.8s; /* Safari */
+    		transition: transform 2.6s ease-in-out, opacity 1s ease-in-out 0.8s;
+
+    		#header {
+				opacity: 1;
+				transition: opacity 0.5s ease-in 2s;
+
+			}
+
+			#content {
+
+				h1 {
+					opacity: 1;
+					transition: opacity 0.5s ease-in 2.5s;
+
+				}
+
+				.icon {
+					opacity: 1;
+					transition: opacity 0.5s ease-in 3s;
+				}
+
+				p {
+					opacity: 1;
+					transition: opacity 0.5s ease-in 3.5s;
+				}
+			}
+		}
+
+	&.hidden {
+
+		#container {
+			opacity: 0;
+			transform: translateY(-10%);
+
+			#header {
+				opacity: 0;
+			}
+
+			#content {
+
+				h1,
+				.icon,
+				p {
+					opacity: 0;
+
+				}
+			}
+		}
+
+	}
+
+
+}

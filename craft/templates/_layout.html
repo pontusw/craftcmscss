@@ -21,7 +21,7 @@
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>		
 </head>
 
-<body>
+<body class="hidden">
 	<div id="container">
 		<header id="header">
 			<nav>
@@ -39,10 +39,18 @@
 		</header>
 
 		<main id="content" role="main">
+			<div class="homepage-background">
+				<div class="page">
 			{% block content %}
 				<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
 				<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
 			{% endblock %}
+
+			</div>
+				<div class="logo-footer">
+					<img class="logo" src="/public/image/logo.png"/>
+				</div>
+			</div>
 		</main>
 
 		<footer id="footer">
@@ -50,5 +58,7 @@
 
 		</footer>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script src="public/js/script.js"></script>
 </body>
 </html>
